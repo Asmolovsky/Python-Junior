@@ -1,0 +1,17 @@
+#Найти сумму чётных чисел от N до M, включая N и M, где N и M вводятся через input(). Учесть условие когда первое число больше второго
+number1 = int(input('Введите число1: '))
+number2 = int(input('Введите число2: '))
+sum_number = 0
+if number1 <= number2:
+    while number1 <= number2:
+        if (number1 % 2) == 0:
+            print(number1)
+            sum_number += number1
+        number1 +=1
+else:
+    while number1 >= number2:
+        if (number2 % 2) == 0:
+            print(number2)
+            sum_number += number2
+        number2 += 1
+print('Сумма', sum_number)
